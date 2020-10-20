@@ -1,10 +1,10 @@
 import React from "react";
 
 const Sequare = ({ value, onClick }) => {
-    const style = value ? `squares ${value}` : `squares`;
-    
+	const style = value ? `squares ${value}` : `squares`;
+
 	return (
-		<button style={style} onClick={onClick}>
+		<button className={style} onClick={onClick}>
 			{value}
 		</button>
 	);
