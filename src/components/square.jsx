@@ -1,20 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 
-const handleClick = () => {
-	console.log("button is clicked");
+const Sequare = ({ value, onClick }) => {
+    const style = value ? `squares ${value}` : `squares`;
+    
+	return (
+		<button style={style} onClick={onClick}>
+			{value}
+		</button>
+	);
 };
-class Sequare extends Component {
-	render() {
-		return (
-			<div>
-				<button
-					type='button'
-					style={{ marginTop: 20, marginLeft: 20 }}
-					className='btn btn-outline-secondary btn-lg m2'
-					onClick={() => handleClick()}></button>
-			</div>
-		);
-	}
-}
 
 export default Sequare;
